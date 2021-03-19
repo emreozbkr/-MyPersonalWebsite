@@ -360,7 +360,8 @@ align-items: center;
 }
 .contentcard{
   position: relative;
-  padding: 40px 60px;
+  font-size: 1.2em;
+  padding: 40px 30px;
   color: grey;
   text-align: center;
   transition: 0.5s;
