@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::selection{
+  color: #fff;
+  background: grey;
+}
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-track {
+background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url('../images/foto5.jpg');
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.container1 {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+.container{
+  min-height: 67vh;
+justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+.myphoto{
+  position: relative;
+  left: 4px;
+  width: 280px;
+  height: 280px;
+}
+.container img{
+  transform-origin: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+.container:hover img{
+  opacity: 0.1;
+}
+.container img:hover{
+  transform: perspective(800px) rotateY(0deg);
+opacity: 1;
+}
+@media only screen and (min-width: 500px) and (max-width: 1024px){
+  .myphoto{
+    position: relative;
+    left: 4px;
+    width: 280px;
+    height: 280px;
+  }
+  .container{
+    min-height: 13vh;
+
+  }
+}
+
+
+.name{
+display: flex;
+justify-content: center;
+align-items: center;
+  font-family: 'Baumans', cursive;
+}
+
+.name h1{
+  margin: 0;
+  padding: 0;
+  color:#111;
+  font-size: 7.8em;
+}
+.name h1 span{
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: animate1 2s linear infinite;
+}
+.name h1 span:nth-child(1){
+  animation-delay: 0s;
+}
+
+.name h1 span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.name h1 span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.name h1 span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.name h1 span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.name h1 span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.name h1 span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.name h1 span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.name h1 span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.name h1 span:nth-child(10) {
+  animation-delay: 2.25s;
+}
+
+.name h1 span:nth-child(11) {
+  animation-delay: 2.5s;
+}
+@keyframes animate1 {
+  0%,100%
+  {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px grey,
+                 0 0 20px grey,
+                 0 0 40px grey,
+                 0 0 80px grey,
+                0 0 120px grey,
+                0 0 200px grey,
+                0 0 300px grey,
+                0 0 400px grey,
+                0 0 500px grey,
+                0 0 600px grey,
+                0 0 700px grey;
+
+  }
+  5%,95%
+  {
+    color: #111;
+    filter: blur(0px);
+    text-shadow:none;
+
+  }
+}
+.btn{
+  display: inline-block;
+  width: 310px;
+  font-weight: bold;
+  padding: 8px;
+  color:#fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.btn:hover,.btn:active{
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+@media only screen and (max-width: 540px){
+
+.name h1 span{
+  font-size: 0.6em;
+}
+.whoimi span{
+  font-size: 0.7em;
+}
+}
+
+.social-icons a{
+	width:50px;
+  text-decoration: none;
+	height:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:20px 25px;
+  border:1px solid white;
+}
+.social-icons{
+	display: flex;
+
+}
+.social-icons i,.social i{
+	color:white;
+  font-size: 18px;
+}
+.social-icons a:hover{
+	background-color:white;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+	color:black;
+	transition:all ease 0.5s;
+}
+
+.square{
+  margin: 0px 250px 0px;
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.square span:nth-child(1){
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition:  0.5s;
+  animation: animate3 6s linear infinite;
+}
+
+.square span:nth-child(2){
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition:  0.5s;
+  animation: animate3 4s linear infinite;
+
+}
+
+.square span:nth-child(3){
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition:  0.5s;
+  animation: animate4 10s linear infinite;
+
+}
+
+@keyframes animate3 {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+  transform: rotate(360deg);
+  }
+}
+@keyframes animate4 {
+  0%
+  {
+    transform: rotate(360deg);
+  }
+  100%
+  {
+  transform: rotate(0deg);
+  }
+}
+.contentcard{
+  position: relative;
+  padding: 40px 60px;
+  color: grey;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.contentcard a{
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  padding: 6px 18px;
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+  border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+.contentcard a:hover{
+  background: #fff;
+  color: #333;
+}
+
+.containergallery img {
+  vertical-align: middle;
+}
+
+.containergallery {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+.whoimi{
+  display: flex;
+  font-family: 'Poiret One', cursive;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5em;
+  color: #333;
+  font-weight: 500;
+}
+ h2 span {
+animation: animate6 1s linear infinite;
+}
+
+@keyframes animate6 {
+  0%,80%{
+    color: #333;
+    box-shadow: none;
+  }
+  100%{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+
+  }
+}
