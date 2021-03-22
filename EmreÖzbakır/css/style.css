@@ -549,7 +549,7 @@ animation: animate6 1s linear infinite;
 }
 
 .manual-btn:hover{
-  background: grey;
+  background: white;
 }
 
 #radio1:checked ~ .first{
